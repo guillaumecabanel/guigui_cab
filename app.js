@@ -11,12 +11,12 @@ const sendAnalytics = (dimension, value) => {
       'x-qm-key': quickMetricsKey,
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ query: query })
+    body: JSON.stringify(query)
   })
 }
 
 const baseUri = 'https://qckm.io/json';
-const quickMetricsKey ='xRzQjjvlAX0iXJ2_NiN6OA';
+const quickMetricsKey ='d4JlnsTFxkcDS4KzOu2Tew';
 
 sendAnalytics('ua', navigator.userAgent);
 sendAnalytics('platform', navigator.platform);
