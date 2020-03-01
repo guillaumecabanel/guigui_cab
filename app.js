@@ -1,6 +1,6 @@
 const sendAnalytics = (dimension, value) => {
   const query = {
-    name: `web.guigui.${dimension}`,
+    name: `${location.hostname}.${dimension}`,
     value: 1,
     dimension: value
   }
@@ -21,3 +21,4 @@ const quickMetricsKey ='xRzQjjvlAX0iXJ2_NiN6OA';
 sendAnalytics('ua', navigator.userAgent);
 sendAnalytics('platform', navigator.platform);
 sendAnalytics('language', navigator.language);
+sendAnalytics('origin', location.origin);
