@@ -1,6 +1,6 @@
 const sendAnalytics = (dimension, value) => {
   const query = {
-    name: "web.guigui.${dimension}",
+    name: `web.guigui.${dimension}`,
     value: 1,
     dimension: value
   }
